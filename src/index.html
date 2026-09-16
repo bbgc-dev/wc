@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore product formats, label information and local culture in Halfway House, Midrand."
+    />
+    <meta name="theme-color" content="#111111" />
+    <title>Common Ground — Product Format Guide</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="age-gate" id="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-title">
+      <div class="age-card">
+        <p class="eyebrow">Before you enter</p>
+        <h1 id="age-title">This site is intended for adults.</h1>
+        <p>Confirm that you are 18 or older to continue.</p>
+        <div class="age-actions">
+          <button class="button button-primary" id="age-yes" type="button">I’m 18 or older</button>
+          <button class="button button-quiet" id="age-no" type="button">I’m under 18</button>
+        </div>
+        <p class="age-message" id="age-message" aria-live="polite"></p>
+      </div>
+    </div>
+
+    <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+    <div class="ticker" aria-label="Product categories">
+      <div class="ticker-track">
+        <span>PRE-ROLLS</span><i>✦</i><span>INFUSED WINE</span><i>✦</i><span>VAPES</span><i>✦</i>
+        <span>EDIBLES</span><i>✦</i><span>MERCHANDISE</span><i>✦</i><span>HALFWAY HOUSE / MIDRAND</span><i>✦</i>
+        <span aria-hidden="true">PRE-ROLLS</span><i aria-hidden="true">✦</i><span aria-hidden="true">INFUSED WINE</span><i aria-hidden="true">✦</i>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#/" aria-label="Common Ground home">
+        <span class="brand-mark" aria-hidden="true">CG</span>
+        <span>COMMON<br />GROUND</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#/category/pre-rolls">Pre-rolls</a>
+        <a href="#/category/edibles">Edibles</a>
+        <a href="#/category/merchandise">Merch</a>
+        <a href="#/visit">Visit</a>
+      </nav>
+      <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="site-menu">
+        <span>Explore</span><b aria-hidden="true">+</b>
+      </button>
+    </header>
+
+    <aside class="site-menu" id="site-menu" aria-label="Explore the site" hidden>
+      <div class="menu-kicker">Product index / 05 categories</div>
+      <nav class="menu-category-list" aria-label="Product categories">
+        <a href="#/category/pre-rolls"><span>01</span>Pre-rolls<small>Flower • paper • filter</small></a>
+        <a href="#/category/infused-wine"><span>02</span>Infused wine<small>Ingredients • volume • servings</small></a>
+        <a href="#/category/vaporizers"><span>03</span>Vaporizer formats<small>Device • extract • batch</small></a>
+        <a href="#/category/edibles"><span>04</span>Edible formats<small>Ingredients • allergens • portions</small></a>
+        <a href="#/category/merchandise"><span>05</span>Merchandise<small>Apparel • accessories • editions</small></a>
+      </nav>
+      <div class="menu-footer">
+        <a href="#/culture">Culture desk</a>
+        <a href="#/visit">Halfway House / Midrand</a>
+        <button id="menu-close" type="button">Close menu ×</button>
+      </div>
+    </aside>
+
+    <main id="app" tabindex="-1"></main>
+
+    <footer>
+      <a class="footer-brand" href="#/">COMMON GROUND<sup>®</sup></a>
+      <p>Cultural information • Halfway House, Midrand • Adults 18+</p>
+      <a href="#/">Back home ↑</a>
+    </footer>
+
+    <noscript><p class="noscript">JavaScript is needed to browse the product-format guide.</p></noscript>
+    <script src="./catalog.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
