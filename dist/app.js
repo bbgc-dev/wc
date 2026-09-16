@@ -8,7 +8,7 @@ const formats = {
   },
   beverage: {
     kicker: "Format 02",
-    title: "Infused beverages",
+    title: "Infused wine",
     description: "A packaged drink format. Product information needs to distinguish container contents from any stated serving information.",
     verify: "Ingredients, allergens, total volume, batch reference and supplied potency documentation.",
     disclose: "Serving information, storage instructions, manufacturer or supplier and required warnings."
@@ -63,7 +63,7 @@ mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click"
 }));
 
 const formatDialog = document.querySelector("#format-dialog");
-document.querySelectorAll(".format-row").forEach((button) => {
+document.querySelectorAll("[data-format]").forEach((button) => {
   button.addEventListener("click", () => {
     const item = formats[button.dataset.format];
     document.querySelector("#dialog-kicker").textContent = item.kicker;
@@ -76,12 +76,7 @@ document.querySelectorAll(".format-row").forEach((button) => {
 });
 document.querySelector("#dialog-close").addEventListener("click", () => formatDialog.close());
 
-const contactDialog = document.querySelector("#contact-dialog");
-document.querySelector("#contact-button").addEventListener("click", () => contactDialog.showModal());
-document.querySelector("#contact-close").addEventListener("click", () => contactDialog.close());
-document.querySelector("#contact-done").addEventListener("click", () => contactDialog.close());
-
-[formatDialog, contactDialog].forEach((dialog) => dialog.addEventListener("click", (event) => {
+[formatDialog].forEach((dialog) => dialog.addEventListener("click", (event) => {
   if (event.target === dialog) dialog.close();
 }));
 

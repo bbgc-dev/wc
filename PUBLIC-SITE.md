@@ -13,8 +13,8 @@ The design uses an after-dark editorial-collage direction: bold condensed typogr
 The visitor journey is:
 
 1. Confirm the adult-audience notice.
-2. Encounter the concept identity and original cultural artwork.
-3. Explore five format categories through factual information panels.
+2. See all five product-format categories immediately in the first viewport.
+3. Open a category guide from its dark editorial card.
 4. Learn which verified details should accompany product information.
 5. Discover the proposed culture desk and local creative direction.
 6. Find the store-information section and a general-contact explanation.
@@ -23,7 +23,7 @@ The visitor journey is:
 
 - Single-page responsive cultural information experience
 - Adult-audience entry notice
-- Five interactive format explanations
+- Five interactive format explanations presented on the landing screen
 - Factual label-information guidance
 - Original hero and editorial artwork
 - Placeholder location, hours, and general-contact content

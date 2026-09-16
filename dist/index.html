@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="A cultural information concept for an independent Halfway House retailer."
+      content="Explore five product formats, label information and local culture in Halfway House, Midrand."
     />
     <meta name="theme-color" content="#111111" />
-    <title>Common Ground — Cultural Information Concept</title>
+    <title>Common Ground — Product Format Guide</title>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -16,8 +16,8 @@
     <div class="age-gate" id="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-title">
       <div class="age-card">
         <p class="eyebrow">Before you enter</p>
-        <h1 id="age-title">This concept is intended for adults.</h1>
-        <p>Confirm that you are 18 or older to explore this informational demonstration.</p>
+        <h1 id="age-title">This site is intended for adults.</h1>
+        <p>Confirm that you are 18 or older to continue.</p>
         <div class="age-actions">
           <button class="button button-primary" id="age-yes" type="button">I’m 18 or older</button>
           <button class="button button-quiet" id="age-no" type="button">I’m under 18</button>
@@ -28,12 +28,11 @@
 
     <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
 
-    <div class="ticker" aria-label="Concept information">
+    <div class="ticker" aria-label="Product categories">
       <div class="ticker-track">
-        <span>INFORMATIONAL CONCEPT</span><i>✦</i><span>HALFWAY HOUSE / MIDRAND</span><i>✦</i>
-        <span>18+ CULTURAL INDEX</span><i>✦</i><span>FICTIONAL DEMO CONTENT</span><i>✦</i>
-        <span aria-hidden="true">INFORMATIONAL CONCEPT</span><i aria-hidden="true">✦</i>
-        <span aria-hidden="true">HALFWAY HOUSE / MIDRAND</span><i aria-hidden="true">✦</i>
+        <span>PRE-ROLLS</span><i>✦</i><span>INFUSED WINE</span><i>✦</i><span>VAPES</span><i>✦</i>
+        <span>EDIBLES</span><i>✦</i><span>MERCHANDISE</span><i>✦</i><span>HALFWAY HOUSE / MIDRAND</span><i>✦</i>
+        <span aria-hidden="true">PRE-ROLLS</span><i aria-hidden="true">✦</i><span aria-hidden="true">INFUSED WINE</span><i aria-hidden="true">✦</i>
       </div>
     </div>
 
@@ -43,7 +42,7 @@
         <span>COMMON<br />GROUND</span>
       </a>
       <nav aria-label="Main navigation">
-        <a href="#formats">Formats</a>
+        <a href="#formats">Product guide</a>
         <a href="#culture">Culture</a>
         <a href="#visit">Visit</a>
       </nav>
@@ -53,83 +52,65 @@
     </header>
 
     <div class="mobile-menu" id="mobile-menu" hidden>
-      <a href="#formats">Explore formats</a>
+      <a href="#formats">Product guide</a>
       <a href="#culture">Culture desk</a>
       <a href="#visit">Visit the store</a>
     </div>
 
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow reveal">A concept identity for an independent Midrand store</p>
-          <h1 id="hero-title" class="reveal">
-            CULTURE,<br />
-            <span>CRAFT</span> &amp;<br />
-            CLARITY.
-          </h1>
-          <p class="hero-intro reveal">
-            A living index of contemporary formats, responsible information and local creative energy.
-            Built to be explored, not rushed.
-          </p>
-          <a class="text-link reveal" href="#formats">Enter the index <span aria-hidden="true">↘</span></a>
+      <section class="hero" id="formats" aria-labelledby="hero-title">
+        <div class="hero-backdrop" aria-hidden="true">
+          <img src="./assets/hero-art.png" alt="" />
         </div>
-        <figure class="hero-art reveal">
-          <div class="image-placeholder" id="hero-placeholder" aria-label="Editorial botanical artwork placeholder">
-            <span>ORIGINAL ART<br />IN PROGRESS</span>
-          </div>
-          <img src="./assets/hero-art.png" alt="Abstract editorial botanical collage in deep black, chartreuse, violet and orange" />
-          <figcaption><span>01</span> Original study: night flora / urban rhythm</figcaption>
-        </figure>
-        <p class="hero-side" aria-hidden="true">SCROLL TO EXPLORE — SCROLL TO EXPLORE —</p>
+        <div class="hero-heading reveal">
+          <p class="eyebrow">Five product formats • Halfway House, Midrand</p>
+          <h1 id="hero-title">Know what’s<br /><span>on the shelf.</span></h1>
+          <p class="hero-intro">
+            Explore the formats, understand what belongs on the label, and find the information that matters.
+          </p>
+        </div>
+
+        <div class="format-card-grid reveal" role="list" aria-label="Product format guides">
+          <button class="format-card format-card-featured" type="button" data-format="pre-roll" role="listitem">
+            <span class="format-number">01</span>
+            <span class="format-name">Pre-rolls</span>
+            <span class="format-note">Flower • paper • filter</span>
+            <span class="format-action">Open guide ↗</span>
+          </button>
+          <button class="format-card" type="button" data-format="beverage" role="listitem">
+            <span class="format-number">02</span>
+            <span class="format-name">Infused wine</span>
+            <span class="format-note">Ingredients • volume • servings</span>
+            <span class="format-action">Open guide ↗</span>
+          </button>
+          <button class="format-card" type="button" data-format="vaporizer" role="listitem">
+            <span class="format-number">03</span>
+            <span class="format-name">Vaporizer formats</span>
+            <span class="format-note">Device • extract • batch</span>
+            <span class="format-action">Open guide ↗</span>
+          </button>
+          <button class="format-card" type="button" data-format="edible" role="listitem">
+            <span class="format-number">04</span>
+            <span class="format-name">Edible formats</span>
+            <span class="format-note">Ingredients • allergens • portions</span>
+            <span class="format-action">Open guide ↗</span>
+          </button>
+          <button class="format-card" type="button" data-format="merch" role="listitem">
+            <span class="format-number">05</span>
+            <span class="format-name">Merchandise</span>
+            <span class="format-note">Apparel • accessories • editions</span>
+            <span class="format-action">Open guide ↗</span>
+          </button>
+        </div>
+        <p class="hero-note">Select a category for a clear guide to product information and label details.</p>
       </section>
 
       <section class="manifesto" aria-label="Site purpose">
         <p class="section-number">[ 01 / ORIENTATION ]</p>
         <p class="manifesto-text reveal">
           Know the format. Read the label. Ask better questions.
-          <span>This is a cultural and product-information space—no prices, stock, checkout or orders.</span>
+          <span>Five distinct formats, each with its own materials, label details and questions worth asking.</span>
         </p>
-      </section>
-
-      <section class="formats" id="formats" aria-labelledby="formats-title">
-        <div class="section-heading">
-          <p class="section-number">[ 02 / THE FORMAT INDEX ]</p>
-          <h2 id="formats-title">Explore by form</h2>
-          <p>Start with the format, then inspect what verified information should accompany it.</p>
-        </div>
-
-        <div class="format-list" role="list">
-          <button class="format-row" type="button" data-format="pre-roll" role="listitem">
-            <span class="format-number">01</span>
-            <span class="format-name">Pre-roll formats</span>
-            <span class="format-note">Flower • paper • filter</span>
-            <span class="format-arrow" aria-hidden="true">↗</span>
-          </button>
-          <button class="format-row" type="button" data-format="beverage" role="listitem">
-            <span class="format-number">02</span>
-            <span class="format-name">Infused beverages</span>
-            <span class="format-note">Ingredients • volume • serving information</span>
-            <span class="format-arrow" aria-hidden="true">↗</span>
-          </button>
-          <button class="format-row" type="button" data-format="vaporizer" role="listitem">
-            <span class="format-number">03</span>
-            <span class="format-name">Vaporizer formats</span>
-            <span class="format-note">Device • extract • batch details</span>
-            <span class="format-arrow" aria-hidden="true">↗</span>
-          </button>
-          <button class="format-row" type="button" data-format="edible" role="listitem">
-            <span class="format-number">04</span>
-            <span class="format-name">Edible formats</span>
-            <span class="format-note">Ingredients • allergens • portions</span>
-            <span class="format-arrow" aria-hidden="true">↗</span>
-          </button>
-          <button class="format-row" type="button" data-format="merch" role="listitem">
-            <span class="format-number">05</span>
-            <span class="format-name">Merchandise</span>
-            <span class="format-note">Apparel • accessories • editions</span>
-            <span class="format-arrow" aria-hidden="true">↗</span>
-          </button>
-        </div>
       </section>
 
       <section class="information-grid" aria-labelledby="facts-title">
@@ -161,9 +142,6 @@
 
       <section class="culture" id="culture" aria-labelledby="culture-title">
         <figure class="culture-art reveal">
-          <div class="image-placeholder" id="culture-placeholder" aria-label="Culture artwork placeholder">
-            <span>CULTURE STUDY<br />IN PROGRESS</span>
-          </div>
           <img src="./assets/culture-art.png" alt="Abstract botanical textures, screen-print grain and urban night reflections" />
         </figure>
         <div class="culture-copy reveal">
@@ -171,7 +149,7 @@
           <h2 id="culture-title">More than a shelf.</h2>
           <p>
             Culture lives in artwork, language, music, clothing and the stories a neighbourhood tells about itself.
-            This space can host commissioned local work and factual editorial pieces once the client approves them.
+            The culture desk brings local creative work and factual editorial pieces into one visual space.
           </p>
           <div class="editorial-tags" aria-label="Possible editorial themes">
             <span>Local artists</span><span>Design</span><span>Label literacy</span><span>Community notes</span>
@@ -186,16 +164,12 @@
         </div>
         <dl class="visit-details">
           <div>
-            <dt>Address</dt>
-            <dd>Full street address to be supplied and approved by the client.</dd>
+            <dt>Area</dt>
+            <dd>Halfway House • near Midrand Mall • Midrand, Gauteng</dd>
           </div>
           <div>
-            <dt>Opening hours</dt>
-            <dd>To be confirmed with the client.</dd>
-          </div>
-          <div>
-            <dt>General enquiries</dt>
-            <dd><button class="contact-button" id="contact-button" type="button">Open contact note ↗</button></dd>
+            <dt>Information</dt>
+            <dd>Visit the store for current product details and verified label information.</dd>
           </div>
         </dl>
       </section>
@@ -203,7 +177,7 @@
 
     <footer>
       <div class="footer-brand">COMMON GROUND<sup>®</sup></div>
-      <p>Concept identity / fictional demonstration / client details pending</p>
+      <p>Cultural information • Halfway House, Midrand • Adults 18+</p>
       <a href="#top">Back to top ↑</a>
     </footer>
 
@@ -216,18 +190,7 @@
         <div><span>VERIFY</span><p id="dialog-verify"></p></div>
         <div><span>DISCLOSE</span><p id="dialog-disclose"></p></div>
       </div>
-      <p class="dialog-note">Demonstration information only. Actual entries require client-supplied, verified product details.</p>
-    </dialog>
-
-    <dialog class="contact-dialog" id="contact-dialog" aria-labelledby="contact-title">
-      <button class="dialog-close" id="contact-close" type="button" aria-label="Close contact note">×</button>
-      <p class="eyebrow">General enquiries</p>
-      <h2 id="contact-title">WhatsApp can connect the conversation.</h2>
-      <p>
-        The approved business number can be added here for store hours, accessibility and general questions.
-        This concept does not capture product selections, quantities, orders or delivery requests.
-      </p>
-      <button class="button button-primary" id="contact-done" type="button">Understood</button>
+      <p class="dialog-note">Information varies by product and batch. Check the packaging and supporting documentation for verified details.</p>
     </dialog>
 
     <script src="./app.js"></script>
