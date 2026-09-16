@@ -8,6 +8,8 @@ window.COMMON_GROUND_CATALOG = {
       note: "Flower • paper • filter",
       intro: "Prepared flower formats vary by size, construction and pack configuration. Use the format guide to see which product facts should be easy to verify.",
       accent: "acid",
+      image: "./assets/catalog/pre-rolls.png",
+      imageAlt: "Three rolled joints on a dark studio surface",
       products: [
         {
           id: "single-pre-roll",
@@ -43,6 +45,8 @@ window.COMMON_GROUND_CATALOG = {
       note: "Ingredients • volume • servings",
       intro: "Packaged drink formats need a clear separation between container contents, stated servings and verified batch information.",
       accent: "violet",
+      image: "./assets/catalog/infused-wine.png",
+      imageAlt: "Dark wine bottle and a glass of red wine on a studio surface",
       products: [
         {
           id: "single-serve-bottle",
@@ -78,6 +82,8 @@ window.COMMON_GROUND_CATALOG = {
       note: "Device • extract • batch",
       intro: "Device, cartridge and pod formats should state what is included, what they are compatible with and which product details belong to that batch.",
       accent: "orange",
+      image: "./assets/catalog/vaporizers.png",
+      imageAlt: "Vape pen, cartridge and pod device on a dark studio surface",
       products: [
         {
           id: "disposable-vaporizer",
@@ -113,6 +119,8 @@ window.COMMON_GROUND_CATALOG = {
       note: "Ingredients • allergens • portions",
       intro: "Food-format products need prominent ingredient, allergen, package-content and storage information tied to the specific product and batch.",
       accent: "acid",
+      image: "./assets/catalog/edibles.png",
+      imageAlt: "Colorful gummies and dark chocolate on a black plate",
       products: [
         {
           id: "gummy-pack",
@@ -148,6 +156,8 @@ window.COMMON_GROUND_CATALOG = {
       note: "Apparel • accessories • editions",
       intro: "Apparel and accessories carry the visual identity into useful objects. Product pages should make materials, dimensions and care information clear.",
       accent: "violet",
+      image: "./assets/catalog/merchandise.png",
+      imageAlt: "Black T-shirt, black cap and cream canvas tote bag",
       products: [
         {
           id: "graphic-tee",

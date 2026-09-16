@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import test from "node:test";
 import vm from "node:vm";
 
@@ -28,6 +28,15 @@ test("the catalog provides five category pages and fifteen detail entries", () =
 test("the menu links to every category route", () => {
   for (const category of catalog.categories) {
     assert.match(html, new RegExp(`#/category/${category.id}`));
+  }
+});
+
+test("every category has a distinct product image in the site bundle", () => {
+  const images = catalog.categories.map((category) => category.image);
+  assert.equal(new Set(images).size, catalog.categories.length);
+  for (const image of images) {
+    const assetUrl = new URL(`../dist/${image.replace("./", "")}`, import.meta.url);
+    assert.equal(existsSync(assetUrl), true, `missing image: ${image}`);
   }
 });
 

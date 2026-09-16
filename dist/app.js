@@ -41,6 +41,7 @@ const productHref = (categoryId, productId) => `#/product/${categoryId}/${produc
 
 const categoryCard = (category) => `
   <a class="format-card accent-${category.accent}" href="#/category/${category.id}">
+    <span class="format-card-media" aria-hidden="true"><img src="${category.image}" alt="" /></span>
     <span class="format-number">${category.number}</span>
     <span class="format-name">${category.name}</span>
     <span class="format-note">${category.note}</span>
@@ -51,6 +52,7 @@ const categoryCard = (category) => `
 const productCard = (category, product, index) => `
   <article class="product-card">
     <a class="product-card-art art-${index % 3}" href="${productHref(category.id, product.id)}" aria-label="Open ${product.name}">
+      <img src="${category.image}" alt="" loading="lazy" />
       <span>${category.number}.${String(index + 1).padStart(2, "0")}</span>
       <strong>${category.short}</strong>
     </a>
@@ -158,7 +160,7 @@ const renderCategory = (category) => {
         <h1>${category.name}</h1>
         <p>${category.intro}</p>
       </div>
-      <div class="collection-poster" aria-hidden="true"><span>${category.number}</span><strong>${category.short}</strong></div>
+      <figure class="collection-poster"><img src="${category.image}" alt="${category.imageAlt}" /><span>${category.number}</span><strong>${category.short}</strong></figure>
     </section>
 
     <section class="collection-index page-gutter" aria-labelledby="collection-title">
@@ -184,6 +186,7 @@ const renderProduct = (category, product) => {
   app.innerHTML = `
     <article class="product-detail">
       <div class="detail-art art-${index % 3}" aria-hidden="true">
+        <img src="${category.image}" alt="" />
         <span>${category.number}.${String(index + 1).padStart(2, "0")}</span>
         <strong>${category.short}</strong>
         <i>FORMAT REFERENCE</i>
