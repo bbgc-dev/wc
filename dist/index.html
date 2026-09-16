@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Explore five product formats, label information and local culture in Halfway House, Midrand."
+      content="Explore product formats, label information and local culture in Halfway House, Midrand."
     />
     <meta name="theme-color" content="#111111" />
     <title>Common Ground — Product Format Guide</title>
@@ -27,7 +27,6 @@
     </div>
 
     <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
-
     <div class="ticker" aria-label="Product categories">
       <div class="ticker-track">
         <span>PRE-ROLLS</span><i>✦</i><span>INFUSED WINE</span><i>✦</i><span>VAPES</span><i>✦</i>
@@ -37,162 +36,47 @@
     </div>
 
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Common Ground home">
+      <a class="brand" href="#/" aria-label="Common Ground home">
         <span class="brand-mark" aria-hidden="true">CG</span>
         <span>COMMON<br />GROUND</span>
       </a>
       <nav aria-label="Main navigation">
-        <a href="#formats">Product guide</a>
-        <a href="#culture">Culture</a>
-        <a href="#visit">Visit</a>
+        <a href="#/category/pre-rolls">Pre-rolls</a>
+        <a href="#/category/edibles">Edibles</a>
+        <a href="#/category/merchandise">Merch</a>
+        <a href="#/visit">Visit</a>
       </nav>
-      <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">
-        Menu
+      <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="site-menu">
+        <span>Explore</span><b aria-hidden="true">+</b>
       </button>
     </header>
 
-    <div class="mobile-menu" id="mobile-menu" hidden>
-      <a href="#formats">Product guide</a>
-      <a href="#culture">Culture desk</a>
-      <a href="#visit">Visit the store</a>
-    </div>
+    <aside class="site-menu" id="site-menu" aria-label="Explore the site" hidden>
+      <div class="menu-kicker">Product index / 05 categories</div>
+      <nav class="menu-category-list" aria-label="Product categories">
+        <a href="#/category/pre-rolls"><span>01</span>Pre-rolls<small>Flower • paper • filter</small></a>
+        <a href="#/category/infused-wine"><span>02</span>Infused wine<small>Ingredients • volume • servings</small></a>
+        <a href="#/category/vaporizers"><span>03</span>Vaporizer formats<small>Device • extract • batch</small></a>
+        <a href="#/category/edibles"><span>04</span>Edible formats<small>Ingredients • allergens • portions</small></a>
+        <a href="#/category/merchandise"><span>05</span>Merchandise<small>Apparel • accessories • editions</small></a>
+      </nav>
+      <div class="menu-footer">
+        <a href="#/culture">Culture desk</a>
+        <a href="#/visit">Halfway House / Midrand</a>
+        <button id="menu-close" type="button">Close menu ×</button>
+      </div>
+    </aside>
 
-    <main id="top">
-      <section class="hero" id="formats" aria-labelledby="hero-title">
-        <div class="hero-backdrop" aria-hidden="true">
-          <img src="./assets/hero-art.png" alt="" />
-        </div>
-        <div class="hero-heading reveal">
-          <p class="eyebrow">Five product formats • Halfway House, Midrand</p>
-          <h1 id="hero-title">Know what’s<br /><span>on the shelf.</span></h1>
-          <p class="hero-intro">
-            Explore the formats, understand what belongs on the label, and find the information that matters.
-          </p>
-        </div>
-
-        <div class="format-card-grid reveal" role="list" aria-label="Product format guides">
-          <button class="format-card format-card-featured" type="button" data-format="pre-roll" role="listitem">
-            <span class="format-number">01</span>
-            <span class="format-name">Pre-rolls</span>
-            <span class="format-note">Flower • paper • filter</span>
-            <span class="format-action">Open guide ↗</span>
-          </button>
-          <button class="format-card" type="button" data-format="beverage" role="listitem">
-            <span class="format-number">02</span>
-            <span class="format-name">Infused wine</span>
-            <span class="format-note">Ingredients • volume • servings</span>
-            <span class="format-action">Open guide ↗</span>
-          </button>
-          <button class="format-card" type="button" data-format="vaporizer" role="listitem">
-            <span class="format-number">03</span>
-            <span class="format-name">Vaporizer formats</span>
-            <span class="format-note">Device • extract • batch</span>
-            <span class="format-action">Open guide ↗</span>
-          </button>
-          <button class="format-card" type="button" data-format="edible" role="listitem">
-            <span class="format-number">04</span>
-            <span class="format-name">Edible formats</span>
-            <span class="format-note">Ingredients • allergens • portions</span>
-            <span class="format-action">Open guide ↗</span>
-          </button>
-          <button class="format-card" type="button" data-format="merch" role="listitem">
-            <span class="format-number">05</span>
-            <span class="format-name">Merchandise</span>
-            <span class="format-note">Apparel • accessories • editions</span>
-            <span class="format-action">Open guide ↗</span>
-          </button>
-        </div>
-        <p class="hero-note">Select a category for a clear guide to product information and label details.</p>
-      </section>
-
-      <section class="manifesto" aria-label="Site purpose">
-        <p class="section-number">[ 01 / ORIENTATION ]</p>
-        <p class="manifesto-text reveal">
-          Know the format. Read the label. Ask better questions.
-          <span>Five distinct formats, each with its own materials, label details and questions worth asking.</span>
-        </p>
-      </section>
-
-      <section class="information-grid" aria-labelledby="facts-title">
-        <div class="fact-intro reveal">
-          <p class="section-number">[ 03 / READ THE FACTS ]</p>
-          <h2 id="facts-title">The label is part of the experience.</h2>
-        </div>
-        <div class="fact-card acid reveal">
-          <span>01</span>
-          <h3>Contents</h3>
-          <p>Look for a clear ingredient list, declared allergens and the manufacturer or supplier.</p>
-        </div>
-        <div class="fact-card violet reveal">
-          <span>02</span>
-          <h3>Strength</h3>
-          <p>Use only verified, product-specific potency and serving information supplied for that batch.</p>
-        </div>
-        <div class="fact-card orange reveal">
-          <span>03</span>
-          <h3>Traceability</h3>
-          <p>Batch references, dates and supporting documents should be easy to find and understand.</p>
-        </div>
-        <div class="fact-card ink reveal">
-          <span>04</span>
-          <h3>Warnings</h3>
-          <p>Required warnings belong with the product information, written plainly and visibly.</p>
-        </div>
-      </section>
-
-      <section class="culture" id="culture" aria-labelledby="culture-title">
-        <figure class="culture-art reveal">
-          <img src="./assets/culture-art.png" alt="Abstract botanical textures, screen-print grain and urban night reflections" />
-        </figure>
-        <div class="culture-copy reveal">
-          <p class="section-number">[ 04 / CULTURE DESK ]</p>
-          <h2 id="culture-title">More than a shelf.</h2>
-          <p>
-            Culture lives in artwork, language, music, clothing and the stories a neighbourhood tells about itself.
-            The culture desk brings local creative work and factual editorial pieces into one visual space.
-          </p>
-          <div class="editorial-tags" aria-label="Possible editorial themes">
-            <span>Local artists</span><span>Design</span><span>Label literacy</span><span>Community notes</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="visit" id="visit" aria-labelledby="visit-title">
-        <div>
-          <p class="section-number">[ 05 / FIND THE SPACE ]</p>
-          <h2 id="visit-title">Halfway House,<br />Midrand.</h2>
-        </div>
-        <dl class="visit-details">
-          <div>
-            <dt>Area</dt>
-            <dd>Halfway House • near Midrand Mall • Midrand, Gauteng</dd>
-          </div>
-          <div>
-            <dt>Information</dt>
-            <dd>Visit the store for current product details and verified label information.</dd>
-          </div>
-        </dl>
-      </section>
-    </main>
+    <main id="app" tabindex="-1"></main>
 
     <footer>
-      <div class="footer-brand">COMMON GROUND<sup>®</sup></div>
+      <a class="footer-brand" href="#/">COMMON GROUND<sup>®</sup></a>
       <p>Cultural information • Halfway House, Midrand • Adults 18+</p>
-      <a href="#top">Back to top ↑</a>
+      <a href="#/">Back home ↑</a>
     </footer>
 
-    <dialog class="detail-dialog" id="format-dialog" aria-labelledby="dialog-title">
-      <button class="dialog-close" id="dialog-close" type="button" aria-label="Close information">×</button>
-      <p class="eyebrow" id="dialog-kicker">Format 01</p>
-      <h2 id="dialog-title">Pre-roll formats</h2>
-      <p id="dialog-description"></p>
-      <div class="dialog-grid">
-        <div><span>VERIFY</span><p id="dialog-verify"></p></div>
-        <div><span>DISCLOSE</span><p id="dialog-disclose"></p></div>
-      </div>
-      <p class="dialog-note">Information varies by product and batch. Check the packaging and supporting documentation for verified details.</p>
-    </dialog>
-
+    <noscript><p class="noscript">JavaScript is needed to browse the product-format guide.</p></noscript>
+    <script src="./catalog.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
