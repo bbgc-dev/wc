@@ -1,0 +1,6 @@
+.sites-runtime/
+.agents/
+.claude/
+skills/
+skills-lock.json
+*.zip
