@@ -6,7 +6,7 @@ window.COMMON_GROUND_CATALOG = {
       name: "Pre-rolls",
       short: "Pre-rolls",
       note: "Flower • paper • filter",
-      intro: "Prepared flower formats vary by size, construction and pack configuration. Use the format guide to see which product facts should be easy to verify.",
+      intro: "Ready-rolled cannabis in single, multipack and infused formats. Compare how each format is made, what the pack should disclose and which batch details to check in store.",
       accent: "acid",
       image: "./assets/catalog/pre-rolls.png",
       imageAlt: "Three rolled joints on a dark studio surface",
@@ -14,26 +14,26 @@ window.COMMON_GROUND_CATALOG = {
         {
           id: "single-pre-roll",
           name: "Single pre-roll",
-          descriptor: "One prepared roll in individual packaging",
-          summary: "A single-unit format where declared weight, materials and batch information should be visible on the pack.",
-          checks: ["Declared net weight", "Paper and filter materials", "Batch reference", "Verified product documentation"],
-          questions: ["Is the unit sealed and labelled?", "Which details are specific to this batch?", "Where are storage and warning details shown?"]
+          descriptor: "One ready-rolled joint in individual packaging",
+          summary: "The most direct pre-roll format: ground flower wrapped in paper with a filter tip. The pack should identify the cultivar, net weight and cannabinoid information for that batch.",
+          checks: ["Cultivar or strain name", "Net flower weight", "Batch-specific THC and CBD", "Paper, filter and storage details"],
+          questions: ["Is this flower-only or infused?", "When was this batch packed?", "Where is the batch test information?"]
         },
         {
           id: "pre-roll-multipack",
           name: "Pre-roll multipack",
-          descriptor: "Several prepared rolls in one package",
-          summary: "A multi-unit format that should distinguish the total package contents from the specification of each unit.",
-          checks: ["Number of units", "Weight per unit and total", "Package seal", "Batch reference"],
-          questions: ["Are all units from the same batch?", "Is the total quantity clearly stated?", "How should the opened pack be stored?"]
+          descriptor: "Several ready-rolled joints in one sealed pack",
+          summary: "A convenient pack of consistently sized pre-rolls. Clear labelling should separate the total flower weight from the weight of each joint.",
+          checks: ["Number of joints", "Weight per joint and total", "Cultivar and batch number", "Resealable storage guidance"],
+          questions: ["Are all joints from one batch?", "What is the weight of each joint?", "How should the opened pack be stored?"]
         },
         {
           id: "infused-pre-roll",
           name: "Infused pre-roll",
-          descriptor: "Prepared flower format with additional declared ingredients",
-          summary: "An infused format needs a complete ingredient description and product-specific documentation rather than assumptions based on appearance.",
-          checks: ["Full ingredient list", "Declared net weight", "Batch-specific documentation", "Required warnings"],
-          questions: ["What additional ingredients are declared?", "Who supplied or manufactured the product?", "Which documents support the label details?"]
+          descriptor: "Flower enhanced with concentrate, oil, kief or another declared extract",
+          summary: "An infused joint combines ground flower with an added cannabis extract. The label should name the infusion and show cannabinoid information for the finished pre-roll.",
+          checks: ["Flower and infusion type", "Net weight", "Total THC and CBD per joint", "Full ingredient and batch details"],
+          questions: ["Which extract was added?", "Is the infusion inside, outside or both?", "Where is the finished-product test information?"]
         }
       ]
     },
@@ -43,7 +43,7 @@ window.COMMON_GROUND_CATALOG = {
       name: "Infused wine",
       short: "Infused wine",
       note: "Ingredients • volume • servings",
-      intro: "Packaged drink formats need a clear separation between container contents, stated servings and verified batch information.",
+      intro: "Cannabis-infused wine in single, multi-serve and sparkling formats. The bottle should make volume, ingredients, servings and cannabinoid content easy to understand.",
       accent: "violet",
       image: "./assets/catalog/infused-wine.png",
       imageAlt: "Dark wine bottle and a glass of red wine on a studio surface",
@@ -51,26 +51,26 @@ window.COMMON_GROUND_CATALOG = {
         {
           id: "single-serve-bottle",
           name: "Single-serve bottle",
-          descriptor: "A bottle presented as one stated serving",
-          summary: "The packaging should make total volume, ingredients and the stated serving information easy to distinguish.",
-          checks: ["Total volume", "Ingredient and allergen list", "Stated serving information", "Batch reference"],
-          questions: ["Does the entire bottle represent one stated serving?", "Are allergens clearly declared?", "What storage instructions apply?"]
+          descriptor: "One bottle presented as a single serving",
+          summary: "An individual bottle of infused wine with the serving information tied to the full container. Volume, ingredients and total cannabinoid content should appear together.",
+          checks: ["Bottle volume", "Total THC and CBD", "Ingredients and allergens", "Batch and best-before details"],
+          questions: ["Is the full bottle one serving?", "Does it contain alcohol?", "Should it be refrigerated before or after opening?"]
         },
         {
           id: "multi-serve-bottle",
           name: "Multi-serve bottle",
-          descriptor: "A larger bottle containing several stated servings",
-          summary: "A multi-serve container should show both the full-container information and the amount represented by one stated serving.",
-          checks: ["Container volume", "Number of stated servings", "Information per serving", "Storage after opening"],
-          questions: ["How is one stated serving measured?", "What information applies to the full bottle?", "Is refrigeration required after opening?"]
+          descriptor: "A larger bottle containing several measured servings",
+          summary: "A share-size infused wine format. The label should clearly separate the cannabinoid amount in one measured serving from the total in the bottle.",
+          checks: ["Bottle volume", "Number and size of servings", "THC and CBD per serving and bottle", "Storage after opening"],
+          questions: ["How is one serving measured?", "What is the total content of the bottle?", "How long does it keep after opening?"]
         },
         {
           id: "sparkling-format",
           name: "Sparkling format",
-          descriptor: "Carbonated packaged drink format",
-          summary: "Carbonated formats add handling and storage considerations to the core ingredient, volume and batch information.",
-          checks: ["Total volume", "Ingredient list", "Closure and storage information", "Supplier details"],
-          questions: ["How should the bottle be handled and stored?", "Are serving details stated clearly?", "Where is the batch reference located?"]
+          descriptor: "A carbonated take on infused wine",
+          summary: "A sparkling infused wine with the same essential label needs as still formats, plus clear handling, opening and refrigeration guidance.",
+          checks: ["Bottle volume", "Servings and cannabinoid content", "Ingredients and allergens", "Opening and storage guidance"],
+          questions: ["Is it single-serve or multi-serve?", "Does it contain alcohol?", "How should an opened bottle be stored?"]
         }
       ]
     }
@@ -80,7 +80,7 @@ window.COMMON_GROUND_CATALOG = {
       name: "Vaporizer formats",
       short: "Vapes",
       note: "Device • extract • batch",
-      intro: "Device, cartridge and pod formats should state what is included, what they are compatible with and which product details belong to that batch.",
+      intro: "Portable cannabis vape formats range from all-in-one disposables to cartridges and closed pods. Compatibility, extract type, capacity and batch testing should all be easy to find.",
       accent: "orange",
       image: "./assets/catalog/vaporizers.png",
       imageAlt: "Vape pen, cartridge and pod device on a dark studio surface",
@@ -88,26 +88,26 @@ window.COMMON_GROUND_CATALOG = {
         {
           id: "disposable-vaporizer",
           name: "Disposable vaporizer",
-          descriptor: "Self-contained device format",
-          summary: "A self-contained device should identify its contents, capacity, supplier and handling information without relying on unstated compatibility assumptions.",
-          checks: ["Device contents", "Declared capacity", "Ingredient or extract details", "Supplier and batch reference"],
-          questions: ["Is the device sealed?", "Which handling instructions are supplied?", "How is the device responsibly disposed of?"]
+          descriptor: "An all-in-one vape with oil, battery and heating element",
+          summary: "A sealed, ready-to-use device that needs no separate battery. The packaging should identify the extract, fill volume, cannabinoid profile and batch.",
+          checks: ["Extract type", "Oil capacity", "THC and CBD profile", "Batch, charging and disposal details"],
+          questions: ["Is the device rechargeable?", "What extract is inside?", "How should the finished device be disposed of?"]
         },
         {
           id: "510-cartridge",
           name: "510 cartridge",
-          descriptor: "Threaded cartridge format for a compatible battery",
-          summary: "A cartridge listing should separate the cartridge contents from the battery or device required to use it.",
-          checks: ["Connection type", "Declared capacity", "Contents and ingredients", "Batch reference"],
-          questions: ["Is a battery included?", "Which devices are compatible?", "What storage position is recommended?"]
+          descriptor: "A threaded oil cartridge for a compatible 510 battery",
+          summary: "A widely used cartridge format sold separately from the battery. Capacity, extract type and hardware compatibility should be stated clearly.",
+          checks: ["510-thread compatibility", "Oil capacity", "Extract and ingredient details", "Cannabinoid profile and batch"],
+          questions: ["Is a battery included?", "What voltage range is recommended?", "How should the cartridge be stored?"]
         },
         {
           id: "closed-pod",
           name: "Closed pod",
-          descriptor: "Pod made for a named compatible system",
-          summary: "Closed pods require precise compatibility information alongside verified contents and batch details.",
-          checks: ["Compatible system", "Pod capacity", "Contents and ingredients", "Manufacturer or supplier"],
-          questions: ["Which exact device accepts this pod?", "Is the pod refillable?", "Where are handling warnings shown?"]
+          descriptor: "A pre-filled pod made for a specific device system",
+          summary: "A compact closed-system format. The exact compatible device matters as much as the extract, capacity and batch information.",
+          checks: ["Compatible device", "Pod capacity", "Extract and ingredient details", "Cannabinoid profile and batch"],
+          questions: ["Which device accepts this pod?", "Is the pod refillable or sealed?", "How should used pods be disposed of?"]
         }
       ]
     }
@@ -117,7 +117,7 @@ window.COMMON_GROUND_CATALOG = {
       name: "Edible formats",
       short: "Edibles",
       note: "Ingredients • allergens • portions",
-      intro: "Food-format products need prominent ingredient, allergen, package-content and storage information tied to the specific product and batch.",
+      intro: "Cannabis edibles turn measured extracts into familiar confectionery and baked formats. Ingredients, allergens, portions and cannabinoid content should be clear before the pack is opened.",
       accent: "acid",
       image: "./assets/catalog/edibles.png",
       imageAlt: "Colorful gummies and dark chocolate on a black plate",
@@ -125,26 +125,26 @@ window.COMMON_GROUND_CATALOG = {
         {
           id: "gummy-pack",
           name: "Gummy pack",
-          descriptor: "Multiple confectionery pieces in one package",
-          summary: "A gummy pack should state the number of pieces, its full ingredient list and how package information relates to each piece.",
-          checks: ["Piece count", "Ingredients and allergens", "Information per piece and pack", "Batch reference"],
-          questions: ["Is each piece uniform according to the label?", "Which allergens are declared?", "How should the opened pack be stored?"]
+          descriptor: "Chewy, portioned gummies in a multi-piece pack",
+          summary: "A familiar edible format where each piece represents a stated portion. The label should show piece count and cannabinoid content per gummy and per pack.",
+          checks: ["Number of gummies", "THC and CBD per piece and pack", "Ingredients and allergens", "Batch and best-before details"],
+          questions: ["How many gummies are in the pack?", "What does each piece contain?", "How should the opened pack be stored?"]
         },
         {
           id: "chocolate-bar",
           name: "Chocolate bar",
-          descriptor: "Segmented confectionery format",
-          summary: "A segmented bar should clearly describe its ingredients, allergens, total contents and any stated information per segment.",
-          checks: ["Segment count", "Ingredients and allergens", "Total package information", "Storage temperature"],
-          questions: ["How many segments are identified?", "Does the label distinguish segment and pack details?", "What prevents heat damage?"]
+          descriptor: "An infused chocolate bar divided into marked segments",
+          summary: "A segmented bar makes portion information easier to follow. The wrapper should state the content of each segment as well as the total for the full bar.",
+          checks: ["Number of segments", "THC and CBD per segment and bar", "Ingredients and allergens", "Temperature and storage guidance"],
+          questions: ["How many segments make up the bar?", "What does each segment contain?", "How should it be protected from heat?"]
         },
         {
           id: "baked-format",
           name: "Baked format",
-          descriptor: "Packaged baked food format",
-          summary: "Baked formats should carry complete food labelling, packaging dates and batch-specific product information.",
-          checks: ["Ingredients and allergens", "Package date", "Storage guidance", "Manufacturer or supplier"],
-          questions: ["What is the stated shelf life?", "How is freshness protected?", "Which information is specific to this batch?"]
+          descriptor: "An infused brownie, cookie or other packaged baked item",
+          summary: "Baked edibles combine cannabis extract with a perishable food product, so freshness, allergens and storage deserve the same attention as cannabinoid content.",
+          checks: ["THC and CBD per item", "Ingredients and allergens", "Packed and best-before dates", "Storage guidance"],
+          questions: ["Is the package one portion or several?", "Which allergens are present?", "What is the stated shelf life?"]
         }
       ]
     }
@@ -154,7 +154,7 @@ window.COMMON_GROUND_CATALOG = {
       name: "Merchandise",
       short: "Merchandise",
       note: "Apparel • accessories • editions",
-      intro: "Apparel and accessories carry the visual identity into useful objects. Product pages should make materials, dimensions and care information clear.",
+      intro: "Streetwear and everyday accessories carry the shop’s visual identity beyond the counter. Fit, fabric, construction and care should be as considered as the artwork.",
       accent: "violet",
       image: "./assets/catalog/merchandise.png",
       imageAlt: "Black T-shirt, black cap and cream canvas tote bag",
@@ -162,26 +162,26 @@ window.COMMON_GROUND_CATALOG = {
         {
           id: "graphic-tee",
           name: "Graphic tee",
-          descriptor: "Printed apparel format",
-          summary: "A useful apparel listing should make fit, fabric, print method and care details easy to compare.",
-          checks: ["Available sizing", "Fabric composition", "Print method", "Care instructions"],
-          questions: ["Is the fit standard or oversized?", "How should the print be washed?", "Who produced the garment?"]
+          descriptor: "A heavyweight printed T-shirt built around the shop’s artwork",
+          summary: "The core wearable: a graphic tee with enough detail on fit, fabric weight, print method and care to choose the right size confidently.",
+          checks: ["Size range and fit", "Fabric composition and weight", "Print method", "Wash and care instructions"],
+          questions: ["Is the fit regular or oversized?", "Is the fabric pre-shrunk?", "How should the print be washed?"]
         },
         {
           id: "headwear",
           name: "Headwear",
-          descriptor: "Cap, beanie or bucket-hat format",
-          summary: "Headwear details should explain construction, fit adjustment, materials and care rather than relying only on photography.",
-          checks: ["Style and construction", "Sizing or adjustment", "Materials", "Care instructions"],
-          questions: ["Is the fit adjustable?", "What materials are used?", "Is this part of a limited edition?"]
+          descriptor: "Caps, beanies and bucket hats finished with shop artwork",
+          summary: "An everyday headwear range where shape, material and fit matter. Each listing should explain sizing, adjustment and construction clearly.",
+          checks: ["Hat style and profile", "Size or adjustment range", "Materials and finish", "Care instructions"],
+          questions: ["Is the fit adjustable?", "What is the crown profile?", "Is this a core piece or limited run?"]
         },
         {
           id: "everyday-accessory",
           name: "Everyday accessory",
-          descriptor: "Small branded utility object",
-          summary: "Accessory listings should state purpose, dimensions, materials and maker information precisely.",
-          checks: ["Dimensions", "Materials", "Intended use", "Maker details"],
-          questions: ["What is included?", "Are care instructions needed?", "Is the object locally made?"]
+          descriptor: "Tote bags and small everyday branded essentials",
+          summary: "Useful objects that bring the visual identity into daily life. Dimensions, materials, construction and what is included should be easy to scan.",
+          checks: ["Dimensions and capacity", "Materials and construction", "What is included", "Maker and care details"],
+          questions: ["What is included with the item?", "How should it be cleaned?", "Was it produced locally?"]
         }
       ]
     }

@@ -57,7 +57,7 @@ const productCard = (category, product, index) => `
       <strong>${category.short}</strong>
     </a>
     <div class="product-card-copy">
-      <p class="product-kind">Format reference</p>
+      <p class="product-kind">Product format</p>
       <h2><a href="${productHref(category.id, product.id)}">${product.name}</a></h2>
       <p>${product.descriptor}</p>
       <a class="text-link" href="${productHref(category.id, product.id)}">Explore the details <span aria-hidden="true">↗</span></a>
@@ -100,12 +100,12 @@ const renderHome = () => {
       <div class="hero-heading reveal">
         <p class="eyebrow">Five product formats • Halfway House, Midrand</p>
         <h1 id="hero-title">Explore what’s<br /><span>on the shelf.</span></h1>
-        <p class="hero-intro">Start with a format, then open a focused reference for the label details and questions that matter.</p>
+        <p class="hero-intro">Browse the range by category, understand the differences and know what to look for when you visit the store.</p>
       </div>
       <div class="format-card-grid reveal" aria-label="Product format guides">
         ${catalog.categories.map(categoryCard).join("")}
       </div>
-      <div class="hero-utility"><span>05 categories</span><span>15 format references</span><span>No prices or online orders</span></div>
+      <div class="hero-utility"><span>05 categories</span><span>15 product formats</span><span>Built for your next store visit</span></div>
     </section>
 
     ${recentSection()}
@@ -113,7 +113,7 @@ const renderHome = () => {
     <section class="manifesto page-gutter" aria-label="Site purpose">
       <p class="section-number">[ 01 / ORIENTATION ]</p>
       <p class="manifesto-text reveal">Know the format. Read the label. Ask better questions.
-        <span>Each category has its own materials, packaging details and questions worth asking before a store visit.</span>
+        <span>From ready-rolled flower to infused drinks, vapes, edibles and streetwear—understand what makes every format different.</span>
       </p>
     </section>
 
@@ -123,7 +123,7 @@ const renderHome = () => {
         <h2 id="facts-title">The label is part of the experience.</h2>
       </div>
       <div class="fact-card acid reveal"><span>01</span><h3>Contents</h3><p>Look for a clear ingredient list, declared allergens and the manufacturer or supplier.</p></div>
-      <div class="fact-card violet reveal"><span>02</span><h3>Strength</h3><p>Use only verified, product-specific potency and serving information supplied for that batch.</p></div>
+      <div class="fact-card violet reveal"><span>02</span><h3>Strength</h3><p>THC and CBD should be shown for the specific batch, with per-piece or per-serving amounts where relevant.</p></div>
       <div class="fact-card orange reveal"><span>03</span><h3>Traceability</h3><p>Batch references, dates and supporting documents should be easy to find and understand.</p></div>
       <div class="fact-card ink reveal"><span>04</span><h3>Warnings</h3><p>Required warnings belong with the product information, written plainly and visibly.</p></div>
     </section>
@@ -166,7 +166,7 @@ const renderCategory = (category) => {
     <section class="collection-index page-gutter" aria-labelledby="collection-title">
       <div class="collection-toolbar">
         <div><p class="section-number">[ FORMAT INDEX ]</p><h2 id="collection-title">Choose a reference.</h2></div>
-        <p>${category.products.length} entries • details confirmed in store</p>
+        <p>${category.products.length} product formats • check current stock in store</p>
       </div>
       <div class="product-grid">${category.products.map((product, index) => productCard(category, product, index)).join("")}</div>
     </section>
@@ -193,7 +193,7 @@ const renderProduct = (category, product) => {
       </div>
       <div class="detail-copy">
         <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#/">Product index</a><span>/</span><a href="#/category/${category.id}">${category.name}</a><span>/</span><span>${product.name}</span></nav>
-        <p class="eyebrow">Informational product format</p>
+        <p class="eyebrow">${category.name} • product format</p>
         <h1>${product.name}</h1>
         <p class="detail-descriptor">${product.descriptor}</p>
         <p class="detail-summary">${product.summary}</p>
@@ -208,8 +208,8 @@ const renderProduct = (category, product) => {
     </section>
 
     <section class="detail-note page-gutter">
-      <strong>Product-specific details come first.</strong>
-      <p>Packaging, ingredients and batch documentation are the source of truth. Current availability and verified specifications should be confirmed directly with the store.</p>
+      <strong>The pack tells the full story.</strong>
+      <p>Cultivar, ingredients, cannabinoid content and batch details can change. Check the current product label and ask the store team whenever something is unclear.</p>
     </section>
 
     ${recentSection()}
